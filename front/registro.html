@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de prueba</title>
+    <style>
+        p {
+            color: blue;
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" integrity=" " crossorigin=" ">
+    <link rel="stylesheet" href="assets/css/miestilo.css"> 
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav nav-pills">
+          <li class="nav-item active">
+            <a class="nav-link me-3 custom-link" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-3" href="comercializacion.html">Comercialización</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link me-3" href="registro.html">Registro</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link me-3" href="login.html">Ingreso</a>
+         </li>
+         <li class="nav-item">
+             <a class="nav-link custom-link" href="terminosdeuso.html" >Términos de Uso</a>
+         </li>
+        </ul>
+    </div>
+
+    <form class="d-flex search-form" role="search">
+      <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+      <button class="btn orange-button" type="submit">Buscar</button>
+    </form>
+    
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="productos">Productos</a>
+        <a class="dropdown-item" href="comercializacion">Comercialización</a>
+        <a class="dropdown-item" href="registro">Registro</a>
+        <a class="dropdown-item" href="login">Ingreso</a>
+        <a class="dropdown-item" href="terminosdeuso">Terminos de Uso</a>
+    </div>
+</nav>
+
+<div class="container mt-2 mb-5 d-flex justify-content-center">
+    <div class="card" style="width: 50%;">
+      <div class="card-header text-center">
+        <h2>Registrarse</h2>
+      </div>
+      <div class="card-body">
+        <form method="post" action="/enviar-form">
+          
+          <div class="form-group">
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+            <input name="nombre" type="text" class="form-control" placeholder="ingresa tu nombre">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1" class="form-label">Apellido</label>
+            <input type="text" name="apellido" class="form-control" placeholder="apellido">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input name="email" type="email" class="form-control" placeholder="correo@algo.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1" class="form-label">Usuario</label>
+            <input type="text" name="usuario" class="form-control" placeholder="usuario">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+            <input name="pass" type="password" class="form-control" placeholder="password">
+          </div>
+          <button type="submit" class="btn btn-success">Guardar</button>
+          <a href="/registro" class="btn btn-danger">Cancelar</a>
+          <button type="reset" class="btn btn-secondary">Borrar</button>
+        </form>
+      </div>
+      
+        <a href="principal.html" style="text-align: center;"> Volver </a>
+      
+    </div>
+    
+  </div>
+  <br>
+  
+ 
+
+  <footer class="footer mt-auto py-3">
+
+    <div class="container-fluid text-center">
+<!-- fila 1 -->
+            <div class="row rounded-2" id="footerfila1">
+
+              <div class="col">
+                INFO
+              </div>
+
+              <div class="col-6">
+                REDES
+              </div>
+
+              <div class="col">
+                COPYRIGHT
+              </div>
+
+            </div>
+
+             
+<!-- fila 2 -->
+
+            <div class="row">
+
+            <div class="col">
+              <a href="contacto.html"> Contacto </a>
+            </div>
+
+            <div class="col-6">
+                <a href="https://instagram.com/" target="_blank"> <i class="bi bi-instagram"> <img src="assets/icons/instagram.svg" alt="InstagramIcon"> </i> Instagram </a>
+              </div>
+
+              <div class="col">
+                PowerSource Insumos © 2024
+              </div>
+
+            </div>
+
+<!-- fila 3 -->
+
+            <div class="row">
+
+            <div class="col"> 
+              <a href="quienessomos.html"> Quienes Somos </a>  
+            </div>
+
+            <div class="col-6">
+              <a href="https://facebook.com/" target="_blank"> <i class="bi bi-facebook"> <img src="assets/icons/facebook.svg" alt="FacebookIcon"> </i> Facebook </a>
+              </div>
+
+            <div class="col">
+              Todos los dererechos reservados
+            </div>
+            </div>
+
+            
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js" integrity=" " crossorigin=" "></script>
+</footer>
+
+</body>
+</html>
